@@ -1,0 +1,75 @@
+.container{
+    max-width:120rem;
+    margin:auto;
+   background-color:lightgray;
+    min-height:50rem;
+  }
+  .header{
+    padding:20px;
+    height:5rem;
+   background-color:#4b77be;
+    *border-bottom:3px solid green;
+    text-align:center;
+
+    color:white;
+  }
+  .content{
+    display:flex;
+  }
+  .sidebar{
+    background-color:#4b77be;
+    flex:0 0 30%;
+    *border-right:3px solid black;
+    color:white;
+    padding-top:2%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom:20%;
+  }
+  .main-section{
+      background-color:lightgray;
+    flex:1;
+    padding-left: 2%;  
+  }
+  .section{
+    border:3px solid black;
+  }
+  .logo-details{
+     
+    border-bottom:3px solid black;
+  }
+  .About-Me{
+    
+    border-bottom:3px solid black;
+  }
+  .Contact-Me{
+    border-bottom:3px solid black;
+  }
+  .Job-Experience h1{
+    border-bottom:3px solid ;
+    padding:10px;
+    color:#4b77be;
+  }
+  .Education{
+    padding:10px;
+    color:#4b77be;
+  }
+  .logo-details img{
+  width:100px;
+  height:100px;
+  
+  margin: 15%  center;
+  grid-column: 2/3;
+  padding-left:30%;
+  padding-bottom:10px;
+  }
+  .About-Me h1{
+  text-align:center;
+  }
+  .Contact-Me h1{
+    text-align:center;
+  }
+  .Education h3{
+   color: black;
+   font-family: 'Times New Roman', Times, serif;
+  }
