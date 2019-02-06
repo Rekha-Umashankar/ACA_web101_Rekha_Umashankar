@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+}
+html{
+   background: url(http://files.smashingmagazine.com/wallpapers/feb-18/create-a-life-you-love/nocal/feb-18-create-a-life-you-love-nocal-2560x1440.png?_ga=2.234167262.1118674465.1549229544-318178856.1549047248) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-container{
+    display: grid;
+    grid-template-columns:40% 20% auto;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:0px;
+    grid-template-areas: "calender Greet calc"
+    "To-Do-List To-Do-List To-Do-List";
+}
+.calender{
+  grid-area: calender;
+}
+.Greet{
+  grid-area:Greet;
+}
+.calc{
+  grid-area: calc; 
+  text-align: center;
+}
+.To-Do-List{
+  grid-area: To-Do-List;
+  
+}
+
+.Calender-container{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+    max-width:350px;
+    max-height:313px;
+ 
+	  margin-left: 10px;
+    margin-right: 10px; 
+    padding:20px;
+     background: url(http://files.smashingmagazine.com/wallpapers/feb-18/february-love/nocal/feb-18-february-love-nocal-1024x1024.png?_ga=2.221091928.1118674465.1549229544-318178856.1549047248) no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+}
+
+.Month{
+   grid-column-start:1;
+   grid-column-end:8;
+   grid-row:1/7;
+}
+.Sunday{
+   
+   grid-column-start:1;
+   grid-column-end:1;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.Monday{ 
+  grid-column-start:2;
+   grid-column-end:2;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+ 
+}
+.Tuesday{
+grid-column-start:3;
+   grid-column-end:3;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.Wednessday{
+ grid-column-start:4;
+   grid-column-end:4;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+  
+}
+.Thursday{
+ grid-column-start:5;
+   grid-column-end:5;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.Friday{
+ grid-column-start:6;
+   grid-column-end:6;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.Saturday{
+grid-column-start:7;
+   grid-column-end:7;
+  grid-template-row:2/7;
+  margin:auto;
+  grid-gap:10px;
+  
+}
+.Jan-twentyseven{
+  grid-column-start:1;
+  grid-column-end:1;
+  grid-template-row:3/7;
+  color:lightgray;
+  margin:auto;
+  grid-gap:10px;
+}
+.Jan-twentyeight{
+  grid-column-start:2;
+  grid-template-row:3/7;
+  color:lightgray;
+  margin:auto;
+  grid-gap:10px;
+}
+.Jan-twentynine{
+  grid-column-start:3;
+  grid-template-row:3/7;
+  color:lightgray;
+  margin:auto;
+  grid-gap:10px;
+}
+.Jan-thirty{
+  grid-column-start:4;
+  grid-template-row:3/7;
+  color:lightgray;
+  margin:auto;
+  grid-gap:10px;
+}
+.Jan-thirtyone{
+    grid-column-start:5;
+  grid-template-row:3/7;
+  color:lightgray;
+  margin:auto;
+  grid-gap:10px;  
+}
+.one{
+   grid-column-start:6;
+   grid-template-row:3/7;
+   margin:auto;
+   grid-gap:10px;
+}
+.two{
+  grid-column-start:7;
+  grid-template-row:3/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.three{
+  grid-column-start:1;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.four{
+  grid-column-start:2;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.five{
+  grid-column-start:3;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.six{
+  grid-column-start:4;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.seven{
+  grid-column-start:5;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.eight{
+  grid-column-start:6;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.nine{
+  grid-column-start:7;
+  grid-template-row:4/7;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.ten{
+  grid-column-start:1;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.eleven{
+  grid-column-start:2;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twelve{
+  grid-column-start:3;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.thirteen{
+  grid-column-start:4;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.fourteen{
+  grid-column-start:5;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.fifteen{
+  grid-column-start:6;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.sixteen{
+  grid-column-start:7;
+  grid-template-row:5/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.seventeen{
+  grid-column-start:1;
+  grid-template-row:6/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.eighteen{
+  grid-column-start:2;
+  grid-template-row:6/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.ninteen{
+  grid-column-start:3;
+  grid-template-row:6/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twenty{
+ grid-column-start:4;
+ grid-template-row:6/7;
+ margin:auto;
+ grid-gap:10px;
+}
+.twentyone{
+  grid-column-start:5;
+  grid-template-row:6/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentytwo{
+  grid-column-start:6;
+  grid-template-row:6/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentythree{
+  grid-column-start:7;
+  grid-template-row:6/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentyfour{
+  grid-column-start:1;
+  grid-template-row:7/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentyfive{
+  grid-column-start:2;
+  grid-template-row:7/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentysix{
+  grid-column-start:3;
+  grid-template-row:7/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentyseven{
+  grid-column-start:4;
+  grid-template-row:7/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.twentyeight
+{
+  grid-column-start:5;
+  grid-template-row:7/7;
+  margin:auto;
+  grid-gap:10px;
+}
+.March-one{
+  grid-column-start:6;
+  grid-template-row:7/7;
+  color:lightgray;
+  margin:auto;
+  grid-gap:10px;
+}
+
+.March-two{
+    grid-column-start:7;
+    grid-template-row:7/7;
+    color:lightgray;
+    margin:auto;
+    grid-gap:10px;
+  }
+.Greeting{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Helloclass"
+    "clock";
+   text-align: center;  
+   padding-top:40px;
+   margin: 0px;
+   color: white;
+   font-size: 30px;
+}
+.Helloclass{
+    grid-area: Helloclass;  
+    
+}
+.clock{
+  margin:10px;
+  grid-area:clock;
+  color:pink; 
+}
+ .Weekly-to-to-list{
+  grid-area: Weekly-to-to-list;
+   
+   text-align:center;
+  font-size: 30px;
+  
+}
+span{
+  color:pink;
+}
+.flex-container{
+display: flex;
+flex-wrap:wrap;
+ 
+justify-content:center;
+padding-left:180px;
+}
+.flex-container >div{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  font-size: 30px;    
+  margin:10px;
+ color:pink;
+}
+.laundry {
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+}
+.cleaning{
+  color: black;
+  font-size: 20px;
+}
+.Plan-Bday{
+  color: black;
+  font-size: 20px;
+  
+}
+
+.Work-on-assignment{
+  color: black;
+  font-size: 20px;
+}
+.Take-Pradyuth-out-to-play{
+  color: black;
+  font-size: 20px;
+}
+.Go-to-library{
+  color: black;
+  font-size: 20px;    
+}
+.Practice-coding{
+  color: black;
+  font-size: 20px;   
+}
+.Submit-assignment{
+  color: black;
+  font-size: 20px;   
+}
+.Go-to-class{
+  color: black;
+  font-size: 20px;  
+}
+.Work-on-the-assignment{
+  color: black;
+  font-size: 20px;  
+}
+.Submit-assignment{
+  color: black;
+  font-size: 20px; 
+}
+.Go-to-class{
+  color: black;
+  font-size: 20px;    
+}
+.Watch-movie{
+  color: black;
+  font-size: 20px; 
+}
+.Take-pradyuth-out{
+  
+  color: black;
+  font-size:20px; 
+}
+ 
+.MyCalculator{
+  
+  max-width:200px;
+  max-height:100px;
+  margin:auto;
+  
+
+}
+
+.MyCalculator input{
+    background-color:none;
+    border:none;
+    box-shadow: none;
+    width: 100%;
+    border:2px solid black;
+    padding: 10px;
+    text-align: right; 
+    font-size: 10px;
+    color: black;
+ 
+    
+}
+.Calculator-buttons{
+grid-area:MyCalculator;
+display: grid;
+grid-template-rows:repeat(4,1fr);
+grid-template-columns:repeat(4,1fr);
+}
+
+.Calc-button{
+
+    background:lightslategray;
+    border: 2px solid black;
+    color:white;
+    font-size:12px;
+     cursor: pointer; 
+
+}
+.Calc-button-is-clear{
+    background:lightpink;
+    border: 2px solid black;
+    padding:10px;
+    color:white;
+    font-size: 12px;
+   
+     cursor: pointer; 
+
+    grid-column: span 3;
+}
+.Calc-button-is-zero{
+    background:lightpink;
+    border: 2px solid black;
+   
+    color:white;
+    font-size: 12px;
+     padding:10px;
+     cursor: pointer; 
+    grid-column: span 3;
+}
